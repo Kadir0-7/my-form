@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Signup</title>
+  </head>
+  <body>
+    <div id="app">
+     <h1> Team Tryout </h1>
+<form>
+<div>
+  <fieldset>
+    <legend>Team</legend>
+  
+    <label for="tigers-a">Tigers A</label>
+    <input type="radio" name="tigers-a" value="tigers-a" id="tigers-a">
+  
+    <label for="tigers-b">Tigers B</label>
+    <input type="radio" name="tigers-b" value="tigers-b" id="tigers-b">
+  </fieldset>
+  <label for="name">Name</label>
+<input type="text" id="name" required pattern="[A-Za-z]+">
+<label for="date">Date</label>
+<input type="date" id="date" name="date">
+</div>
+<div>
+  <label for="email">Email</label>
+  <input type="text" id="email" required pattern= "[a-z0-9@.]+">
+</div>
+<div>
+  <label for="Story">Story About You </label>
+  <textarea id="story" name="story"></textarea>
+</div>
+
+<div>
+  <label for="club-name">Who Won The Most Champions League </label>
+<select id="club-name" name="club-name">
+  <option value="real-madrid">Real Madrid</option>
+  <option value="barcelona">Barcelona</option>
+  <option value="psg">PSG</option>
+  <option value="bayern">Bayern Munich</option>
+</select>
+</div>
+<div>
+
+</div>
+<div>
+  <fieldset>
+    <legend>Fee Acceptance</legend>
+    <input id="fee" name="fee" type="checkbox" required>
+   <label for="fee">Yes</label>
+  
+    
+
+</fieldset>
+</div>
+
+<button>Submit</button>
+
+</form>
+
+
+
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
